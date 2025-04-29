@@ -1,13 +1,14 @@
-# SlidesDownloader  
-One-click desktop app to export Google Slides (with full-quality images and videos) to `.pptx`.  
+# SlidesDownloader
 
-## Features  
-- Preserves original image resolution  
-- Detects embedded videos (YouTube links & Drive files)  
-- Prompts for Drive-video access if needed  
-- Outputs a native PowerPoint file  
+## Setup
 
-## Usage  
-1. Download/clone:  
-   ```bash
-   git clone https://github.com/<your-username>/SlidesDownloader.git
+1. **Copy** `credentials_template.json` → `credentials.json`  
+2. **Fill in** your real Client ID/Client Secret from Google Cloud  
+3. **Place** `credentials.json` next to `main.py` on your computer  
+4. **Do not** commit `credentials.json` back to GitHub
+
+## Run
+
+```bash
+pip install -r requirements.txt
+python main.py
